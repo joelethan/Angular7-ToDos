@@ -7,12 +7,14 @@ import { AppComponent } from './app.component';
 import { ToDosComponent } from './components/to-dos/to-dos.component';
 import { TodoItemComponent } from './components/todo-item/todo-item.component';
 import { from } from 'rxjs';
+import { HeaderComponent } from './components/layout/header/header.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ToDosComponent,
-    TodoItemComponent
+    TodoItemComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
