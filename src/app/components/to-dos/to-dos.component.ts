@@ -23,4 +23,9 @@ export class ToDosComponent implements OnInit {
     // Remove from server
     this.TodoServic.deleteTodo(todo).subscribe();
   }
+  addTodo(todo:Todo){
+    this.TodoServic.addTodo(todo).subscribe(todo=>{
+      this.todos.push(todo)
+    })
+  }
 }
